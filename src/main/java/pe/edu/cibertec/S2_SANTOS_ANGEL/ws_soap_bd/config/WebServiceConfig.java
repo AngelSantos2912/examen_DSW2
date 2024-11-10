@@ -1,4 +1,4 @@
-package pe.edu.cibertec.ws_soap_bd.config;
+package pe.edu.cibertec.S2_SANTOS_ANGEL.ws_soap_bd.config;
 
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.ApplicationContext;
@@ -17,7 +17,7 @@ public class WebServiceConfig extends WsConfigurerAdapter {
         MessageDispatcherServlet servlet = new MessageDispatcherServlet();
         servlet.setApplicationContext(context);
         servlet.setTransformWsdlLocations(true);
-        return new ServletRegistrationBean<>(servlet, "/ws/*"); // que va a operar apartir del /ws/
+        return new ServletRegistrationBean<>(servlet, "/ws/*");
     }
 
 }
